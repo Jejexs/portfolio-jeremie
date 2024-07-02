@@ -57,12 +57,7 @@ const SIDE_PROJECTS: SideProjectProps[] = [
     {
         Logo: BookText,
         title: "Mon premier portfolio",
-        description: (
-            <>
-                Portfolio réalisé en première année de Bachelor avec Nuxt et TailwindCSS{" "}
-                <span className="text-red-500">(non responsive)</span>
-            </>
-        ),
+        description: "Portfolio réalisé en première année de Bachelor avec Nuxt et TailwindCSS (non responsive)",
         url: "https://fournier-jeremie.vercel.app/"
     }
 ];
