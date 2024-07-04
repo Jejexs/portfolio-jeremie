@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { Anek_Telugu } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
 
 
 const AnekTelugu = Anek_Telugu({ subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="en" className="h-full" >
       <body className={cn(GeistSans.variable, GeistMono.variable, AnekTelugu.variable, "font-sans h-full bg-background text-foreground")}>{children}
       <SpeedInsights />
+      <Analytics />
       </body>
     </html>
   );
